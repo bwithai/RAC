@@ -1,7 +1,8 @@
 __pycache__
 .cache
 .venv
-../imageDB
-./alembic.ini
-./app/alembic
-./uv.lock
+imageDB
+alembic.ini
+backend/app/alembic
+backend/pyproject.toml
+uv.lock
