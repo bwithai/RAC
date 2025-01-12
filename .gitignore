@@ -6,3 +6,6 @@ alembic.ini
 backend/app/alembic
 backend/pyproject.toml
 uv.lock
+
+# Edit Image
+backend/editImage/pretrained_weights
