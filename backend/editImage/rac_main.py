@@ -97,15 +97,15 @@ def retake_image(image_data, output_file_path, smile, lip_false=False):
 
 # retake_image(image_data, './assets/test.jpg', -0.3, lip_false=True)
 
-image_paths = get_images_path(image_dir)
-for image_path in image_paths:
-    filename = os.path.basename(image_path)
-    name, extnshn = filename.split('.')
-    simple_file_path = os.path.join("../../imageDB/output", f"{name}_simple.{extnshn}")
-    smile_file_path = os.path.join("../../imageDB/output", f"{name}_smile.{extnshn}")
-    close_mouth_file_path = os.path.join("../../imageDB/output", f"{name}_close_mouth.{extnshn}")
-    retake_image(image_path, simple_file_path, -0.3)
-    retake_image(image_path, close_mouth_file_path, -0.1, lip_false=True)
-    retake_image(image_path, smile_file_path, 0.9)
-    # Get the filename and extension from the image path
-print("Output saved to 'assets/simple_output'")
+# image_paths = get_images_path(image_dir)
+# for image_path in image_paths:
+#     filename = os.path.basename(image_path)
+#     name, extnshn = filename.split('.')
+#     simple_file_path = os.path.join("../../imageDB/output", f"{name}_simple.{extnshn}")
+#     smile_file_path = os.path.join("../../imageDB/output", f"{name}_smile.{extnshn}")
+#     close_mouth_file_path = os.path.join("../../imageDB/output", f"{name}_close_mouth.{extnshn}")
+#     retake_image(image_path, simple_file_path, -0.3)
+#     retake_image(image_path, close_mouth_file_path, -0.1, lip_false=True)
+#     retake_image(image_path, smile_file_path, 0.9)
+#     # Get the filename and extension from the image path
+# print("Output saved to 'assets/simple_output'")
